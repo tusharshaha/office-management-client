@@ -15,16 +15,16 @@ const Dashboard = () => {
             </div>
         {/* Dashboard menubar  */}
             <div className={toggle? "showDashMenu" : "dashLeftSide"}>
-                <h3>Managex</h3>
+                <h3 className='logo-text logo-border'>Managex</h3>
                 <ul className='menu-item'>
                     <li>
                         <Link to=''><MdMapsHomeWork className='icon'/>Dashboard Home</Link>
                     </li>
                     <li>
-                        <Link to='/addEmployee'><IoIosPersonAdd className='icon'/>Add Employee</Link>
+                        <Link to='addEmployee'><IoIosPersonAdd className='icon'/>Add Employee</Link>
                     </li>
                     <li>
-                        <Link to='manageEmploye'><MdManageAccounts className='icon'/>Manage Employee</Link>
+                        <Link to='manageEmployee'><MdManageAccounts className='icon'/>Manage Employee</Link>
                     </li>
                     <li>
                         <Link to='/home'><FaHome className='icon'/>Back To Home</Link>

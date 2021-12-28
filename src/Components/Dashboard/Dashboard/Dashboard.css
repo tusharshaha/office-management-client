@@ -1,12 +1,13 @@
 .toggle-icon{
+    position: absolute;
     display: none;
     font-size: 30px;
     margin-top: 20px;
     margin-left: 10px;
-    color: #fff;
+    color: rgb(248, 176, 41);
+    z-index: 50;
 }
 .dashLeftSide{
-    border-right: 3px solid gray;
     height: 100vh;
     padding: 20px 15px 0;
     flex: 25%;
@@ -17,8 +18,16 @@
 }
 .dashRightSide{
     flex: 75%;
-    padding-top: 20px;
+    padding-top: 30px;
     margin-left: 240px;
+}
+.logo-border::after{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+    height: 2.5px;
 }
 .menu-item{
     padding-left: 0;
@@ -26,7 +35,7 @@
 }
 .menu-item li{
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .menu-item li a{
     color: rgb(247, 228, 194);
@@ -42,4 +51,30 @@
 .icon{
     font-size: 30px;
     margin-right: 10px;
+}
+@media only screen and (max-width:650px){
+    .toggle-icon{
+        display: block;
+    }
+    .dashLeftSide{
+        padding: 60px 15px 0;
+        left: -100%;
+        transition: 0.5s;
+    }
+    .dashRightSide{
+        text-align: center;
+        margin: 0;
+    }
+    .showDashMenu{
+        height: 100vh;
+        padding: 60px 15px 0;
+        flex: 25%;
+        width: 230px;
+        position: fixed;
+        background-color: rgb(40, 50, 73);
+        color: #fff;
+        left: 0;
+        transition: 0.5s;
+        z-index: 25;
+    }
 }

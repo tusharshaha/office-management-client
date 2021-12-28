@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home/Home';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import DashboardHome from './Components/Dashboard/DashboardHome/DashboardHome';
+import ManageEmployee from './Components/Dashboard/ManageEmployee/ManageEmployee';
+import AddEmployee from './Components/Dashboard/AddEmployee/AddEmployee';
 function App() {
   const [loading, setLoading] = useState(false)
   const override = css``;
@@ -39,10 +41,17 @@ function App() {
         : <div className="App">
           <BrowserRouter>
             <Routes>
+            {/* this is Home Route  */}
               <Route path="/" element={<Home />} />
               <Route path="home" element={<Home />} />
+            {/* this is Dashboard  */}
               <Route path="dashboard" element={<Dashboard />}>
+            {/* this is dashboard home */}
                 <Route path='' element={<DashboardHome />} />
+            {/* this is add employee route  */}
+                <Route path='addEmployee' element={<AddEmployee />} />
+            {/* this is manage employee route  */}
+                <Route path='manageEmployee' element={<ManageEmployee />} />
               </Route>
             </Routes>
           </BrowserRouter>
