@@ -1,0 +1,45 @@
+.toggle-icon{
+    display: none;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #fff;
+}
+.dashLeftSide{
+    border-right: 3px solid gray;
+    height: 100vh;
+    padding: 20px 15px 0;
+    flex: 25%;
+    width: 230px;
+    position: fixed;
+    background-color: rgb(40, 50, 73);
+    color: #fff;
+}
+.dashRightSide{
+    flex: 75%;
+    padding-top: 20px;
+    margin-left: 240px;
+}
+.menu-item{
+    padding-left: 0;
+    margin-top: 30px;
+}
+.menu-item li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.menu-item li a{
+    color: rgb(247, 228, 194);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.menu-item li a:hover{
+    color: rgb(250, 161, 89);
+}
+
+.icon{
+    font-size: 30px;
+    margin-right: 10px;
+}
