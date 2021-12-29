@@ -1,0 +1,18 @@
+.content-gap{
+    margin-top: 150px;
+}
+.job-img{
+    width: 100%;
+
+}
+.job-img img{
+    width: 100%;
+}
+@media only screen and (max-width:770px){
+    .find-job-details{
+        margin-top: 20px;
+    }
+    .content-gap{
+        margin-top: 100px;
+    }
+}

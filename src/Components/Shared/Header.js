@@ -9,7 +9,7 @@ const Header = () => {
                 <Navbar.Brand className='logo-text'>Managex</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto text-center">
                         <Nav.Link as={Link} to="/home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/dashboard">Dashboard</Nav.Link>
                     </Nav>

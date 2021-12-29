@@ -1,0 +1,44 @@
+.top-banner{
+    height: 570px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(121, 120, 120, 0.164);
+    margin-top: 60px;
+    border-bottom-left-radius: 30%;
+    border-bottom: 15px solid #ff4153;
+}
+.banner-heading{
+    font-weight: bold;
+}
+.text-red{
+    color: #ff4153;
+}
+.banner-text{
+    margin-top: 25px;
+    color: rgb(110, 108, 108);
+    padding-right: 20px;
+}
+.banner-img{
+    width: 530px;
+}
+.banner-img img{
+    width: 100%;
+}
+@media only screen and (max-width:1000px) {
+    .banner-img{
+        width: 430px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .banner-img{
+        display: none;
+    }
+}
+@media only screen and (max-width:550px) {
+    .top-banner{
+        text-align: center;
+        border: none;
+        border-bottom-left-radius: 0%;
+    }
+
+}
