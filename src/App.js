@@ -32,8 +32,8 @@ function App() {
         <div className='preLoader'>
           <SyncLoader
             loading={loading}
-            size={25}
-            margin={2}
+            size={20}
+            margin={4}
             color="#ff4a57"
             css={override}
           />

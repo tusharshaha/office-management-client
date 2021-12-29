@@ -1,0 +1,29 @@
+.card-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgb(40, 50, 73);
+    background-color: rgb(40, 50, 73);
+    transition: 0.5s;
+}
+.custom-card:hover .card-img{
+    border: 3px solid #ff4153;
+}
+.card-img img{
+    width: 100%;
+}
+.show-more a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #ff4153;
+    transition: 0.5s;
+}
+.show-more a:hover{
+    color: #d8293b;
+}

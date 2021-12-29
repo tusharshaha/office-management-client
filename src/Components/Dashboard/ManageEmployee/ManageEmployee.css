@@ -1,0 +1,32 @@
+.manage-emp-section{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.update-btn{
+    border: none;
+    color: white;
+    background-color: rgb(3, 170, 3);
+    padding: 3px 7px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.update-btn:hover{
+    background-color: rgb(5, 148, 5);
+}
+.delete-btn{
+    background-color: #f83a3a;
+    padding: 3px 7px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    transition: 0.4s;
+}
+.delete-btn:hover{
+    background-color: #d83333;
+}
+.table-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}

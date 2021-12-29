@@ -1,5 +1,5 @@
 .toggle-icon{
-    position: absolute;
+    position: fixed;
     display: none;
     font-size: 30px;
     margin-top: 20px;
@@ -52,7 +52,7 @@
     font-size: 30px;
     margin-right: 10px;
 }
-@media only screen and (max-width:650px){
+@media only screen and (max-width:680px){
     .toggle-icon{
         display: block;
     }

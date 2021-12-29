@@ -8,7 +8,7 @@ const TopBanner = () => {
             <Container>
                 <Row xs={1} md={2} className='g-4 d-flex align-items-center'>
                     <Col>
-                        <div>
+                        <div data-aos='fade-right'>
                             <h1 className='banner-heading'>Find Your Favourite</h1>
                             <h2 className='text-red banner-heading'>Job Immediete</h2>
 
@@ -16,7 +16,7 @@ const TopBanner = () => {
                         </div>
                     </Col>
                     <Col>
-                        <div className='banner-img'>
+                        <div data-aos='fade-left' className='banner-img'>
                             <img src={topBanner} alt="" />
                         </div>
                     </Col>
