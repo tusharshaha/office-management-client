@@ -14,7 +14,7 @@ const JobProcess = () => {
         <Container className='content-gap'>
             <h1 className='banner-heading text-center'>Our Job <span className='text-red'>Process</span></h1>
             <Row xs={1} sm={2} md={3} className='g-4 mt-4'>
-                {jobDetails.map(details=> <Col>
+                {jobDetails.map(details=> <Col key={details.id}>
                         <div className='custom-card'>
                             <div className='card-icon'>{details.icon}</div>
                             <h5 className='fw-bold text-red'>{details.title}</h5>
