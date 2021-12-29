@@ -1,0 +1,12 @@
+.footer-section{
+    position: relative;
+    margin-top: 200px;
+}
+.footer{
+    background-color: rgb(40, 50, 73);
+    color: white;
+    height: 300px;
+}
+.footer-top h2{
+    margin-top: 60px;
+}
