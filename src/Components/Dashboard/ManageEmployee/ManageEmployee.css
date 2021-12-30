@@ -1,6 +1,6 @@
 .manage-emp-section{
     text-align: center;
-    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
 }
 .update-btn{
@@ -29,4 +29,19 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+@media only screen and (max-width:800px) {
+    .manage-emp-section{
+        width: 450px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .manage-emp-section{
+        width: 350px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .manage-emp-section{
+        width: 300px;
+    }
 }

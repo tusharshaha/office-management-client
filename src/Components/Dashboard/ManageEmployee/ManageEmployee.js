@@ -9,25 +9,25 @@ const ManageEmployee = () => {
     const { employees } = useEmployee()
     const [employee, setEmployee] = useState({})
     const [modalShow, setModalShow] = useState(false);
-    const handleDelete = (id)=>{
+    const handleDelete = (id) => {
         Swal.fire({
             icon: 'warning',
             title: 'Are you sure you want to delete?',
             showCancelButton: true,
             confirmButtonText: 'Delete',
-          }).then((result) => {
-            if (result.isConfirmed){
+        }).then((result) => {
+            if (result.isConfirmed) {
                 axios.delete(`http://localhost:5000/deleteEmp/${id}`)
-                .then(res => {
-                    if(res.data.acknowledged){
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Successfully Deleted',
-                            showConfirmButton: false,
-                            timer: 1500
-                          })
-                    }
-                })
+                    .then(res => {
+                        if (res.data.acknowledged) {
+                            Swal.fire({
+                                icon: 'success',
+                                title: 'Successfully Deleted',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }
+                    })
 
             }
         })
@@ -64,7 +64,7 @@ const ManageEmployee = () => {
                                     }} className='update-btn'>Update</button>
                                 </td>
                                 <td>
-                                    <button onClick={()=> handleDelete(emp._id)} className='delete-btn'>Delete</button>
+                                    <button onClick={() => handleDelete(emp._id)} className='delete-btn'>Delete</button>
                                 </td>
                             </tr>
                         </tbody>)}
@@ -73,11 +73,11 @@ const ManageEmployee = () => {
 
             </div>
             <UpdateEmpModal
-                    show={modalShow}
-                    onHide={() => setModalShow(false)}
-                    employee={employee}
-                    setShowModal={setModalShow}
-                />
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+                employee={employee}
+                setShowModal={setModalShow}
+            />
         </Container>
     );
 };
