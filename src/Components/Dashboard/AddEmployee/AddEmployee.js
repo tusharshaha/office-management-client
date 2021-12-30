@@ -7,7 +7,7 @@ const AddEmployee = () => {
     const [employee, setEmployee] = useState({})
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:5000/addEmployee', employee)
+        axios.post('https://stormy-savannah-20150.herokuapp.com/addEmployee', employee)
             .then(res => {
                 if (res.data.acknowledged) {
                     Swal.fire({

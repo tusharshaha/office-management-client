@@ -17,7 +17,7 @@ const ManageEmployee = () => {
             confirmButtonText: 'Delete',
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:5000/deleteEmp/${id}`)
+                axios.delete(`https://stormy-savannah-20150.herokuapp.com/deleteEmp/${id}`)
                     .then(res => {
                         if (res.data.acknowledged) {
                             Swal.fire({

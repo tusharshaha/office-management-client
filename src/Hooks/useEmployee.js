@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 const useEmployee =()=>{
     const [employees, setEmployees] = useState([])
     useEffect(()=>{
-        axios.get('http://localhost:5000/employees')
+        axios.get('https://stormy-savannah-20150.herokuapp.com/employees')
         .then(res => setEmployees(res.data))
     },[employees])
     return {employees};

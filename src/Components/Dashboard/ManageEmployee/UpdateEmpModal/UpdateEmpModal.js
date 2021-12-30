@@ -22,7 +22,7 @@ const UpdateEmpModal = ({ employee, setShowModal, ...rest }) => {
             confirmButtonText: 'Update',
           }).then((result) => {
             if (result.isConfirmed) {
-                axios.put(`http://localhost:5000/employee/${employee._id}`, {updatedEmp,employee})
+                axios.put(`https://stormy-savannah-20150.herokuapp.com/employee/${employee._id}`, {updatedEmp,employee})
                 .then(res=> {
                     if(res.data.acknowledged){
                         setUpdatedEmp({})
