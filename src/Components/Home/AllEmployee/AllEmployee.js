@@ -17,7 +17,7 @@ const AllEmployee = () => {
                         <Spinner animation="grow" variant="danger" />
                     </div>
                     :
-                    <Row xs={1} md={2} lg={3} className='g-3 mt-5'>
+                    <Row xs={1} sm={2} md={2} lg={3} className='g-3 mt-5'>
                         {
                             employees?.map(emp => <Col key={emp._id}>
                                 <div className="custom-card">
