@@ -11,6 +11,8 @@ import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 import DashboardHome from './Components/Dashboard/DashboardHome/DashboardHome';
 import ManageEmployee from './Components/Dashboard/ManageEmployee/ManageEmployee';
 import AddEmployee from './Components/Dashboard/AddEmployee/AddEmployee';
+import AllEmployee from './Components/Home/AllEmployee/AllEmployee';
+import NotFound from './Components/NotFound/NotFound'
 function App() {
   const [loading, setLoading] = useState(false)
   const override = css``;
@@ -41,18 +43,21 @@ function App() {
         : <div className="App">
           <BrowserRouter>
             <Routes>
-            {/* this is Home Route  */}
+              {/* this is Home Route  */}
               <Route path="/" element={<Home />} />
               <Route path="home" element={<Home />} />
-            {/* this is Dashboard  */}
+              {/* this is Dashboard  */}
               <Route path="dashboard" element={<Dashboard />}>
-            {/* this is dashboard home */}
+                {/* this is dashboard home */}
                 <Route path='' element={<DashboardHome />} />
-            {/* this is add employee route  */}
+                {/* this is add employee route  */}
                 <Route path='addEmployee' element={<AddEmployee />} />
-            {/* this is manage employee route  */}
+                {/* this is manage employee route  */}
                 <Route path='manageEmployee' element={<ManageEmployee />} />
               </Route>
+              {/* this route will show our all employee  */}
+              <Route path='home/allEmployees' element={<AllEmployee/>}/>
+              <Route path="*" element={<NotFound/>}/>
             </Routes>
           </BrowserRouter>
         </div>}
